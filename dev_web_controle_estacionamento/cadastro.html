@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Reserva</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Reserva de Estacionamento</h1>
+    </header>
+
+    <form id="myForm">
+        <label for="placa">Placa do Veículo:</label><br>
+        <input type="text" id="placa" name="placa" required><br><br>
+        
+        <label for="dono">Nome do Proprietário:</label><br>
+        <input type="text" id="dono" name="dono" required><br><br>
+
+        <label for="ap">Número do Apartamento:</label><br>
+        <input type="text" id="ap" name="ap" required><br><br>
+
+        <label for="bloco">Bloco do Apartamento:</label><br>
+        <input type="text" id="bloco" name="bloco" required><br><br>
+
+        <label for="modelo">Modelo do Veíclo</label><br>
+        <input type="text" id="modelo" name="modelo" required><br><br>
+
+        <label for="cor">Cor do Veículo</label><br>
+        <input type="text" id="cor" name="cor" required><br><br>
+
+        <label for="vaga">Número da Vaga de Estacionamento:</label><br>
+        <input type="text" id="vaga" name="vaga" required><br><br>
+    
+        <input type="submit" value="Enviar">
+    </form><br>
+
+    <div class="button-container">
+        <button class="button" onclick="window.location.href = 'Reserva.html';">Ir para Página de Reserva</button>
+    </div>
+
+    <div id="popup" class="popup">Cadastro realizado com sucesso!</div>
+</body>
+</html>
+
+<script src="script.js"></script>
